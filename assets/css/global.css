@@ -1,0 +1,156 @@
+:root {
+  --themeBlack: #2b3333;
+  --themeBlueA: #395b64;
+  --themeBlueB: #a5c9ca;
+  --themeBlueC: #e7f6f2;
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+
+  scroll-behavior: smooth;
+
+  --iSans: "iSans";
+}
+
+@font-face {
+  font-family: "iSans";
+  src: url("./../fonts/IRANSansWeb.eot") format("eot"),
+    url("./../fonts/IRANSansWeb.woff2") format("woff2"),
+    url("./../fonts/IRANSansWeb.woff") format("woff");
+}
+
+body {
+  font-family: var(--iSans) !important;
+  color: var(--themeBlueC) !important;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+li {
+  list-style-type: none;
+}
+
+.fixedMenu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    flex                                    */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------- flexStart ------------------------------- */
+.flexStart {
+  display: flex;
+  justify-content: start;
+  place-items: start;
+}
+
+.flexColumnStart {
+  display: flex;
+  justify-content: start;
+  place-items: start;
+  flex-direction: column;
+}
+
+/* -------------------------------- flexCenter ------------------------------- */
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.flexColumnCenter {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
+/* -------------------------------- flexEnd ------------------------------- */
+.flexEnd {
+  display: flex;
+  justify-content: end;
+  place-items: end;
+}
+
+.flexColumnEnd {
+  display: flex;
+  justify-content: end;
+  place-items: end;
+  flex-direction: column;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    /flex                                   */
+/* -------------------------------------------------------------------------- */
+
+.glassCard {
+  backdrop-filter: blur(5px) saturate(180%);
+  background-color: rgba(224, 224, 224, 0.25);
+  border: 1px solid rgba(224, 224, 224, 0.25);
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.btn {
+  padding: 10px 50px 10px 50px;
+  font-family: var(--iSans) !important;
+  color: var(--themeBlueC) !important;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 3px solid var(--themeBlueC);
+  backdrop-filter: blur(15px) saturate(150%);
+  background-color: rgba(224, 224, 224, 0.25);
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.btn:hover {
+  outline: none;
+  box-shadow: 0px 0px 15px 5px rgba(165, 201, 202, 1);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--themeBlueA);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--themeBlueC);
+  border-radius: 12px;
+  box-shadow: inset 0 0 3px var(--black);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  progress                                  */
+/* -------------------------------------------------------------------------- */
+
+.progressBack {
+  background-color: var(--themeBlueC);
+  width: 200px;
+  height: 15px;
+  border: 2px solid var(--themeBlueA);
+  border-radius: 12px;
+}
+
+.progressFront {
+  background-color: var(--themeBlueA);
+  width: var(--fill);
+  height: 15px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 7px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  /progress                                  */
+/* -------------------------------------------------------------------------- */
