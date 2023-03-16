@@ -23,12 +23,16 @@ header {
 }
 
 header .menu {
+  /* position: fixed;
+  width: 100%; */
   display: flex;
   justify-content: space-evenly;
   place-items: center;
   /* background-color: rgba(57, 91, 100, 0.1); */
   background-color: rgba(43, 51, 51, 0.8);
   padding: 15px;
+  z-index: 100;
+  animation: load 0.5s 1 forwards;
 }
 
 header .menu a {
@@ -60,6 +64,26 @@ header .menu a:hover {
   position: relative;
   width: 50%;
   height: max-content;
+}
+
+.bio .left .glassCard img {
+  animation: load 1s 1 forwards;
+}
+
+.bio .left .glassCard h1 {
+  animation: load 1.5s 1 forwards;
+}
+
+.bio .left .glassCard span {
+  animation: load 2s 1 forwards;
+}
+
+.bio .left .glassCard button {
+  animation: load 2.5s 1 forwards;
+}
+
+.bio .right div {
+  animation: load 3s 1 forwards;
 }
 
 .bio .right > div h3,
@@ -207,12 +231,28 @@ footer {
   padding: 5px;
   border-radius: 100%;
   background-color: var(--themeBlueA);
+  opacity: 0;
+  animation: load 1s 1 forwards;
 }
 
 #upBtn img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  ANIMATION                                 */
+/* -------------------------------------------------------------------------- */
+
+@keyframes load {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* -------------------------------------------------------------------------- */

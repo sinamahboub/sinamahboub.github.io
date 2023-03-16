@@ -8,7 +8,7 @@
 
   scroll-behavior: smooth;
 
-  --iSans: "iSans";
+  font-family: "iSans" !important;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: var(--iSans) !important;
+  /* font-family: "iSans" !important; */
   color: var(--themeBlueC) !important;
 }
 
@@ -99,7 +99,7 @@ li {
 
 .btn {
   padding: 10px 50px 10px 50px;
-  font-family: var(--iSans) !important;
+  /* font-family: var(--iSans) !important; */
   color: var(--themeBlueC) !important;
   font-weight: bold;
   border-radius: 12px;
