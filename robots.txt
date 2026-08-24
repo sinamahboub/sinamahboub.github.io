@@ -1,0 +1,12 @@
+# robots.txt for sinamahboub.github.io
+# Allow all crawlers to index the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sinamahboub.github.io/sitemap.xml
+
+# Optional: Disallow certain paths if needed
+# Disallow: /assets/
+# Disallow: /private/
