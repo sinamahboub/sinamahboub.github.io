@@ -648,6 +648,40 @@ img {
   color: var(--text-secondary);
 }
 
+/* ---------- GitHub ---------- */
+.github {
+  padding: var(--space-8) 0;
+}
+.github-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+.github-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+.github-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid var(--border-light);
+}
+.github-profile h3 {
+  font-size: 1.2rem;
+}
+.github-profile p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
 /* Responsive helpers */
 .hide-mobile {
   display: none;
