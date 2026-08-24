@@ -567,6 +567,20 @@ img {
   font-size: 0.8rem;
 }
 
+/* ---------- About ---------- */
+.about {
+  padding: var(--space-8) 0;
+  background: var(--bg-secondary);
+}
+.about-content {
+  max-width: 700px;
+}
+.about-content p {
+  margin-bottom: var(--space-4);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
 /* Responsive helpers */
 .hide-mobile {
   display: none;
