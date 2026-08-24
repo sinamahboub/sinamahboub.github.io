@@ -581,6 +581,42 @@ img {
   line-height: 1.8;
 }
 
+/* ---------- Skills ---------- */
+.skills {
+  padding: var(--space-8) 0;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-4);
+}
+.skill-category {
+  background: var(--bg-card);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+.skill-category h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+  color: var(--text-primary);
+}
+.skill-category ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.skill-category ul li {
+  background: rgba(79, 140, 255, 0.06);
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
 /* Responsive helpers */
 .hide-mobile {
   display: none;
