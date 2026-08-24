@@ -747,6 +747,47 @@ img {
   font-size: 0.95rem;
 }
 
+/* ---------- Footer ---------- */
+.footer {
+  padding: var(--space-6) 0;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.footer-inner .logo {
+  font-size: 1.2rem;
+}
+.footer-inner p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.footer-links {
+  display: flex;
+  gap: var(--space-5);
+}
+.footer-links a {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+.footer-links a:hover {
+  color: var(--text-primary);
+}
+.footer-copy {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--space-4);
+}
+
 /* Responsive helpers */
 .hide-mobile {
   display: none;
