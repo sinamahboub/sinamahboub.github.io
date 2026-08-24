@@ -722,6 +722,31 @@ img {
   color: var(--text-secondary);
 }
 
+/* ---------- Contact ---------- */
+.contact {
+  padding: var(--space-8) 0;
+}
+.contact-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+#contact-form .input-group {
+  gap: var(--space-1);
+}
+#contact-form button[type="submit"] {
+  align-self: flex-start;
+  margin-top: var(--space-2);
+}
+#form-status {
+  margin-top: var(--space-3);
+  font-size: 0.95rem;
+}
+
 /* Responsive helpers */
 .hide-mobile {
   display: none;

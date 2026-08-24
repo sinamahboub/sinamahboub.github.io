@@ -322,7 +322,41 @@
   </div>
 </section>
 
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="contact section">
+  <div class="container">
+    <span class="section-label">Contact</span>
+    <h2 class="section-title">Let's build <span class="text-gradient">something</span>.</h2>
+    <div class="contact-wrapper">
+      <form id="contact-form" novalidate>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required autocomplete="name">
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+        <div class="input-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Project idea, collaboration, ...">
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit-btn">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-loader" style="display:none;">⏳</span>
+        </button>
+        <div id="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/contact.js"></script>
   </body>
 </html>
