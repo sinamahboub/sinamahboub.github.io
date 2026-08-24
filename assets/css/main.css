@@ -682,6 +682,46 @@ img {
   color: var(--text-muted);
 }
 
+/* ---------- Currently ---------- */
+.currently {
+  padding: var(--space-7) 0;
+  background: var(--bg-secondary);
+}
+.currently-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-5);
+}
+.currently-item {
+  background: var(--bg-card);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+.currently-item:hover {
+  border-color: var(--border-light);
+  transform: translateY(-2px);
+}
+.currently-item.highlight {
+  border-color: var(--accent);
+  background: rgba(79, 140, 255, 0.05);
+}
+.currently-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: var(--space-2);
+}
+.currently-item h4 {
+  font-size: 1rem;
+  margin-bottom: var(--space-1);
+}
+.currently-item p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
 /* Responsive helpers */
 .hide-mobile {
   display: none;
