@@ -868,3 +868,49 @@ textarea:focus-visible {
     font-size: 0.7rem;
   }
 }
+
+/* ---------- SVG icons (replacing emoji) ---------- */
+.service-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--text-primary);
+}
+.currently-icon svg {
+  width: 32px;
+  height: 32px;
+  color: var(--text-primary);
+}
+
+/* ---------- Project covers without a screenshot ---------- */
+.project-image--gradient {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gradient);
+}
+.project-image--gradient svg {
+  width: 72px;
+  height: 72px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.project-image--dark {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+}
+
+/* ---------- Contact form loader (CSS spinner, was an emoji) ---------- */
+.btn-loader {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  vertical-align: middle;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
